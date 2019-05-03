@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A4750B0B227C9D47005738CF /* SwiftPusher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4750B01227C9D47005738CF /* SwiftPusher.framework */; };
-		A4750B10227C9D47005738CF /* SwiftPusherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4750B0F227C9D47005738CF /* SwiftPusherTests.swift */; };
 		A4750B12227C9D47005738CF /* SwiftPusher.h in Headers */ = {isa = PBXBuildFile; fileRef = A4750B04227C9D47005738CF /* SwiftPusher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4750B1C227C9E34005738CF /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4750B1B227C9E34005738CF /* Types.swift */; };
+		A4BD50B8227CD96900752D38 /* PusherNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD50B7227CD96900752D38 /* PusherNotification.swift */; };
+		A4BD50BE227CE00500752D38 /* PusherNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD50BD227CE00500752D38 /* PusherNotificationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +29,10 @@
 		A4750B04227C9D47005738CF /* SwiftPusher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftPusher.h; sourceTree = "<group>"; };
 		A4750B05227C9D47005738CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4750B0A227C9D47005738CF /* SwiftPusherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPusherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4750B0F227C9D47005738CF /* SwiftPusherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPusherTests.swift; sourceTree = "<group>"; };
 		A4750B11227C9D47005738CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4750B1B227C9E34005738CF /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		A4BD50B7227CD96900752D38 /* PusherNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherNotification.swift; sourceTree = "<group>"; };
+		A4BD50BD227CE00500752D38 /* PusherNotificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PusherNotificationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				A4750B04227C9D47005738CF /* SwiftPusher.h */,
 				A4750B05227C9D47005738CF /* Info.plist */,
 				A4750B1B227C9E34005738CF /* Types.swift */,
+				A4BD50B7227CD96900752D38 /* PusherNotification.swift */,
 			);
 			path = SwiftPusher;
 			sourceTree = "<group>";
@@ -83,7 +86,7 @@
 		A4750B0E227C9D47005738CF /* SwiftPusherTests */ = {
 			isa = PBXGroup;
 			children = (
-				A4750B0F227C9D47005738CF /* SwiftPusherTests.swift */,
+				A4BD50BD227CE00500752D38 /* PusherNotificationTests.swift */,
 				A4750B11227C9D47005738CF /* Info.plist */,
 			);
 			path = SwiftPusherTests;
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BD50B8227CD96900752D38 /* PusherNotification.swift in Sources */,
 				A4750B1C227C9E34005738CF /* Types.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4750B10227C9D47005738CF /* SwiftPusherTests.swift in Sources */,
+				A4BD50BE227CE00500752D38 /* PusherNotificationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
