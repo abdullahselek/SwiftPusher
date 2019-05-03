@@ -185,3 +185,17 @@ enum Error: Int {
     /// Keychain does not contain certificate.
     case keychainCreateIdentity = -303
 }
+
+enum Environment {
+    case none
+    case sandbox
+    case production
+    case auto
+}
+
+enum EnvironmentOptions {
+    case none
+    case sandbox(value: Environment)
+    case production(value: Environment)
+    case any(value: Environment)
+}
