@@ -10,6 +10,7 @@
 		A4750B0B227C9D47005738CF /* SwiftPusher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4750B01227C9D47005738CF /* SwiftPusher.framework */; };
 		A4750B10227C9D47005738CF /* SwiftPusherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4750B0F227C9D47005738CF /* SwiftPusherTests.swift */; };
 		A4750B12227C9D47005738CF /* SwiftPusher.h in Headers */ = {isa = PBXBuildFile; fileRef = A4750B04227C9D47005738CF /* SwiftPusher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4750B1C227C9E34005738CF /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4750B1B227C9E34005738CF /* Types.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		A4750B0A227C9D47005738CF /* SwiftPusherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPusherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4750B0F227C9D47005738CF /* SwiftPusherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPusherTests.swift; sourceTree = "<group>"; };
 		A4750B11227C9D47005738CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4750B1B227C9E34005738CF /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				A4750B04227C9D47005738CF /* SwiftPusher.h */,
 				A4750B05227C9D47005738CF /* Info.plist */,
+				A4750B1B227C9E34005738CF /* Types.swift */,
 			);
 			path = SwiftPusher;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					A4750B00227C9D47005738CF = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					A4750B09227C9D47005738CF = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4750B1C227C9E34005738CF /* Types.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		A4750B16227C9D47005738CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.abdullahselek.SwiftPusher;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		A4750B17227C9D47005738CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +399,7 @@
 		A4750B19227C9D47005738CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftPusherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -408,6 +417,7 @@
 		A4750B1A227C9D47005738CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftPusherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
