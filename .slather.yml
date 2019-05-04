@@ -1,0 +1,8 @@
+ci_service: travis_ci
+coverage_service: cobertura_xml
+xcodeproj: SwiftPusher.xcodeproj
+scheme: SwiftPusher
+source_directory: SwiftPusher
+output_directory: test_results/xml_report
+ignore:
+  - SwiftPusherTests/*
