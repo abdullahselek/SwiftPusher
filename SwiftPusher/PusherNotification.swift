@@ -65,4 +65,47 @@ public struct PusherNotification {
         self.priority = priority
     }
 
+    // MARK: Helpers
+
+    internal func filterHex(_ hex: String) -> String {
+        let hex = hex.lowercased()
+        var result = ""
+        for (_, c) in hex.enumerated() {
+            if (c >= "a" && c <= "f") || (c >= "0" && c <= "9") {
+                result = result + String(c)
+            }
+        }
+        return result
+    }
+
+    internal func dataFromHex(_ hex: String) -> Data? {
+        var result = Data()
+        for (index, _) in hex.enumerated() {
+            if index < hex.count / 2 {
+                var buffer = [Character]()
+                buffer.append(hex[index * 2])
+                buffer.append(hex[index * 2 + 1])
+                let hexa = String(buffer).hexaToDecimal
+                result.append(UInt8(hexa))
+            }
+        }
+        return result
+    }
+
+}
+
+extension StringProtocol {
+
+    subscript(offset: Int) -> Element {
+        return self[index(startIndex, offsetBy: offset)]
+    }
+
+}
+
+extension String {
+
+    var hexaToDecimal: Int {
+        return Int(strtoul(self, nil, 16))
+    }
+
 }

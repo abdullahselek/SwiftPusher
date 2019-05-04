@@ -44,4 +44,19 @@ class PusherNotificationTests: XCTestCase {
         XCTAssertNotNil(notification, "PusherNotification can not initiated with data!")
     }
 
+    func testFilterHex() {
+        var result = notification.filterHex("255")
+        XCTAssertEqual(result, "255")
+        result = notification.filterHex("ff")
+        XCTAssertEqual(result, "ff")
+    }
+
+    func testDataFromHex() {
+        let data1 = notification.dataFromHex("ffffff")
+        XCTAssertNotNil(data1, "Can not get data1 from hex!")
+        let data2 = notification.dataFromHex("aaaaaa")
+        XCTAssertNotNil(data2, "Can not get data2 from hex!")
+        XCTAssertNotEqual(data1, data2)
+    }
+
 }
