@@ -25,6 +25,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A4458246227DD41300FA7D55 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A4458247227DD41300FA7D55 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		A4458248227DD41300FA7D55 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		A4458249227DD41300FA7D55 /* .slather.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .slather.yml; sourceTree = "<group>"; };
+		A445824A227DD41300FA7D55 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A4750B01227C9D47005738CF /* SwiftPusher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPusher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4750B04227C9D47005738CF /* SwiftPusher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftPusher.h; sourceTree = "<group>"; };
 		A4750B05227C9D47005738CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +62,11 @@
 		A4750AF7227C9D47005738CF = {
 			isa = PBXGroup;
 			children = (
+				A4458249227DD41300FA7D55 /* .slather.yml */,
+				A4458248227DD41300FA7D55 /* .travis.yml */,
+				A4458247227DD41300FA7D55 /* Gemfile */,
+				A4458246227DD41300FA7D55 /* LICENSE */,
+				A445824A227DD41300FA7D55 /* README.md */,
 				A4750B03227C9D47005738CF /* SwiftPusher */,
 				A4750B0E227C9D47005738CF /* SwiftPusherTests */,
 				A4750B02227C9D47005738CF /* Products */,
