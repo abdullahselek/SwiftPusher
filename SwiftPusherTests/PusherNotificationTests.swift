@@ -26,8 +26,22 @@ class PusherNotificationTests: XCTestCase {
         notification = nil
     }
 
-    func testPusherNotificationInit() {
+    func testInitPusherNotification() {
         XCTAssertNotNil(notification, "PusherNotification can not initiated!")
+    }
+
+    func testInitPusherNotificationWithData() {
+        guard let data = "data".data(using: .utf8), let token = "token".data(using: .utf8) else {
+            XCTFail("Can not generate data parameters!")
+            return
+        }
+        let notification = PusherNotification(withPayloadData: data,
+                                              tokenData: token,
+                                              identifier: 1,
+                                              expirationStamp: 10,
+                                              addExpiration: true,
+                                              priority: 1)
+        XCTAssertNotNil(notification, "PusherNotification can not initiated with data!")
     }
 
 }

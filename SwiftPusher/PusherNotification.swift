@@ -50,4 +50,19 @@ public struct PusherNotification {
         self.priority = priority
     }
 
+    /// Create and returns a notification object based on given raw attributes.
+    public init(withPayloadData data: Data,
+                tokenData: Data,
+                identifier: Int,
+                expirationStamp: Int,
+                addExpiration: Bool,
+                priority: Int) {
+        self.payloadData = data
+        self.tokenData = tokenData
+        self.identifier = identifier
+        self.expirationStamp = expirationStamp
+        self.addExpiration = addExpiration
+        self.priority = priority
+    }
+
 }
