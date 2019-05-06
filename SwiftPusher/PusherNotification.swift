@@ -104,19 +104,3 @@ public struct PusherNotification {
     }
 
 }
-
-extension StringProtocol {
-
-    subscript(offset: Int) -> Element {
-        return self[index(startIndex, offsetBy: offset)]
-    }
-
-}
-
-extension String {
-
-    var hexaToDecimal: Int {
-        return Int(strtoul(self, nil, 16))
-    }
-
-}
