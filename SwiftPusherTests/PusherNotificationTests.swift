@@ -59,4 +59,13 @@ class PusherNotificationTests: XCTestCase {
         XCTAssertNotEqual(data1, data2)
     }
 
+    func testHexFromData() {
+        guard let data = "ffffff".data(using: .utf8) else {
+            XCTFail("Can not create hex data!")
+            return
+        }
+        let hex = notification.hexFromData(data)
+        XCTAssertEqual(hex, "666666666666")
+    }
+
 }

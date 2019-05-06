@@ -92,6 +92,12 @@ public struct PusherNotification {
         return result
     }
 
+    internal func hexFromData(_ data: Data) -> String {
+        return data.reduce("") {
+            $0 + String(format: "%02x", $1)
+        }
+    }
+
 }
 
 extension StringProtocol {
