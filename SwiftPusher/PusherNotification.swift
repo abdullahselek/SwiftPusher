@@ -8,6 +8,11 @@
 
 import Foundation
 
+enum Size {
+    static let DeviceToken = 32
+    static let PayloadMax = 256
+}
+
 public struct PusherNotification {
 
     /// String representation of serialized JSON.
