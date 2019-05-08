@@ -13,10 +13,24 @@ import XCTest
 class PusherNotificationTests: XCTestCase {
 
     var notification: PusherNotification!
+    let token = "03df25c845d460bcdad7802d2vf6fc1dfde97283bf75cc993eb6dca835ea2e2f"
+    let payload = """
+                    {
+                    "aps" : {
+                        "alert" : {
+                        "title" : "Game Request",
+                        "subtitle" : "Five Card Draw"
+                        "body" : "Bob wants to play poker",
+                        },
+                        "category" : "GAME_INVITATION"
+                        },
+                        "gameID" : "12345678"
+                    }
+                    """
 
     override func setUp() {
-        notification = PusherNotification(withPayload: "payload",
-                                          token: "token",
+        notification = PusherNotification(withPayload: payload,
+                                          token: token,
                                           identifier: 1,
                                           expiration: Date(timeIntervalSince1970: TimeInterval(1000) / 1000),
                                           priority: 1)
@@ -66,6 +80,16 @@ class PusherNotificationTests: XCTestCase {
         }
         let hex = notification.hexFromData(data)
         XCTAssertEqual(hex, "666666666666")
+    }
+
+    func testDataType0() {
+        guard let tokenData = token.data(using: .utf8),
+            let payloadData = payload.data(using: .utf8) else {
+            XCTFail("Sample datas can not generated!")
+            return
+        }
+        let dataType0 = notification.dataType0(withTokenData: tokenData, payloadData: payloadData)
+        XCTAssertEqual(dataType0.count, tokenData.count + payloadData.count, "dataType0 failed to create a new data!")
     }
 
 }

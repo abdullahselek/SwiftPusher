@@ -103,4 +103,10 @@ public struct PusherNotification {
         }
     }
 
+    internal func dataType0(withTokenData tokenData: Data, payloadData: Data) -> Data {
+        var deviceTokenData = tokenData
+        deviceTokenData.append(payloadData)
+        return deviceTokenData
+    }
+
 }
