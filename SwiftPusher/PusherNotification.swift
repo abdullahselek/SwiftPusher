@@ -103,10 +103,15 @@ public struct PusherNotification {
         }
     }
 
-    internal func dataType0(withTokenData tokenData: Data, payloadData: Data) -> Data {
-        var deviceTokenData = tokenData
-        deviceTokenData.append(payloadData)
-        return deviceTokenData
+    internal func dataType0() -> Data {
+        guard let tokenData = self.tokenData,
+            let payloadData = payloadData else {
+                print("SwiftPusher: missing values to generate data with type0!")
+                return Data()
+        }
+        var result = tokenData
+        result.append(payloadData)
+        return result
     }
 
     internal func dataType1() -> Data {
