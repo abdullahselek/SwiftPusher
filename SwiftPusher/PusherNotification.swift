@@ -109,4 +109,23 @@ public struct PusherNotification {
         return deviceTokenData
     }
 
+    internal func dataType1() -> Data {
+        guard var identifier = self.identifier,
+            var expirationStamp = self.expirationStamp,
+            let tokenData = self.tokenData,
+            let payloadData = payloadData else {
+                print("SwiftPusher: missing values to generate data with type1!")
+                return Data()
+        }
+        let identifierData = Data(bytes: &identifier,
+                                  count: MemoryLayout.size(ofValue: identifier))
+        var result = identifierData
+        let expirationStampData = Data(bytes: &expirationStamp,
+                                       count: MemoryLayout.size(ofValue: expirationStamp))
+        result.append(expirationStampData)
+        result.append(tokenData)
+        result.append(payloadData)
+        return result
+    }
+
 }
