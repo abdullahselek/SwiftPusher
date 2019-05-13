@@ -133,4 +133,14 @@ public struct PusherNotification {
         return result
     }
 
+    private func appendTo(data: inout NSMutableData,
+                          identifier: inout Int,
+                          bytes: inout Data,
+                          length: inout Int) {
+        data.append(&identifier, length: 1)
+        var length = CFSwapInt16(UInt16(length))
+        data.append(&length, length: 2)
+        data.append(&bytes, length: bytes.count)
+    }
+
 }
