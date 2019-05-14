@@ -112,4 +112,20 @@ class PusherNotificationTests: XCTestCase {
         XCTAssertTrue(dataType1.count > 0, "dataType1 failed to create a new data!")
     }
 
+    func testDataWithType2() {
+        guard let tokenData = token.data(using: .utf8),
+            let payloadData = payload.data(using: .utf8) else {
+                XCTFail("Sample datas can not generated!")
+                return
+        }
+        let notification = PusherNotification(withPayloadData: payloadData,
+                                              tokenData: tokenData,
+                                              identifier: 3,
+                                              expirationStamp: 10,
+                                              addExpiration: true,
+                                              priority: 1)
+        let dataType2 = notification.dataType2()
+        XCTAssertTrue(dataType2.count > 0, "dataType2 failed to create a new data!")
+    }
+
 }

@@ -133,14 +133,77 @@ public struct PusherNotification {
         return result
     }
 
+    internal func dataType2() -> Data {
+        var result = NSMutableData()
+        if let data = tokenData {
+            var identifier = 1
+            appendTo(data: &result,
+                     identifier: &identifier,
+                     bytes: data,
+                     length: data.count)
+        }
+        if let payloadData = payloadData {
+            var identifier = 2
+            appendTo(data: &result,
+                     identifier: &identifier,
+                     bytes: payloadData,
+                     length: payloadData.count)
+        }
+        var id = UInt32(0)
+        if let i = identifier {
+            let i32 = UInt32(i)
+            id = CFSwapInt32(i32)
+        }
+        var expires = UInt32(0)
+        if let ex = expirationStamp {
+            let ex32 = UInt32(ex)
+            expires = CFSwapInt32(ex32)
+        }
+        var priority = UInt8(0)
+        if let p = self.priority {
+            priority = UInt8(p)
+        }
+        var iden = 3
+        let identifierData = Data(bytes: &id,
+                                  count: MemoryLayout.size(ofValue: id))
+        appendTo(data: &result,
+                 identifier: &iden,
+                 bytes: identifierData,
+                 length: 4)
+        if let addExpiration = self.addExpiration, addExpiration == true {
+            var identifier = 4
+            let expires = Data(bytes: &expires,
+                               count: MemoryLayout.size(ofValue: expires))
+            appendTo(data: &result,
+                     identifier: &identifier,
+                     bytes: expires,
+                     length: 4)
+        }
+        var identifier = 5
+        let priorityData = Data(bytes: &priority,
+                                count: MemoryLayout.size(ofValue: priority))
+        appendTo(data: &result,
+                 identifier: &identifier,
+                 bytes: priorityData,
+                 length: 1)
+        var command = UInt8(2)
+        result.replaceBytes(in: NSRange(location: 0, length: 1), withBytes: &command)
+        var length = CFSwapInt32(UInt32(result.count - 5))
+        result.replaceBytes(in: NSRange(location: 1, length: 4), withBytes: &length)
+        return Data(referencing: result)
+    }
+
     private func appendTo(data: inout NSMutableData,
                           identifier: inout Int,
-                          bytes: inout Data,
-                          length: inout Int) {
+                          bytes: Data,
+                          length: Int) {
         data.append(&identifier, length: 1)
         var length = CFSwapInt16(UInt16(length))
         data.append(&length, length: 2)
-        data.append(&bytes, length: bytes.count)
+        bytes.withUnsafeBytes { rawBufferPointer in
+            let rawPtr = rawBufferPointer.baseAddress!
+            data.append(rawPtr, length: bytes.count)
+        }
     }
 
 }
