@@ -31,7 +31,15 @@ public struct PusherNotification {
     var identifier: Int?
 
     /// The expiration date after which the server will not attempt to deliver.
-    var expiration: Date?
+    var expiration: Date? {
+        get {
+            return addExpiration ? Date.init(timeIntervalSince1970: TimeInterval(expirationStamp ?? 0)) : nil
+        }
+        set {
+            expirationStamp = Int(newValue?.timeIntervalSince1970 ?? 0)
+            addExpiration = newValue != nil ? true : false
+        }
+    }
 
     /// Epoch seconds representation of expiration date.
     var expirationStamp: Int?
@@ -40,7 +48,7 @@ public struct PusherNotification {
     var priority: Int?
 
     /// Indicates whether the expiration date should be serialized.
-    var addExpiration: Bool?
+    var addExpiration: Bool!
 
     /// Create and returns a notification object based on given attribute objects.
     public init(withPayload payload: String,
