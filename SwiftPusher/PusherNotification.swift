@@ -16,7 +16,17 @@ enum Size {
 public struct PusherNotification {
 
     /// String representation of serialized JSON.
-    var payload: String?
+    var payload: String? {
+        get {
+            if let payloadData = payloadData {
+                return String(data: payloadData, encoding: .utf8)
+            }
+            return nil
+        }
+        set {
+            payloadData = newValue?.data(using: .utf8)
+        }
+    }
 
     /// UTF-8 data representation of serialized JSON.
     var payloadData: Data?
