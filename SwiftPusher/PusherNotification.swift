@@ -32,7 +32,26 @@ public struct PusherNotification {
     var payloadData: Data?
 
     /// Hex string representation of the device token.
-    var token: String?
+    var token: String? {
+        get {
+            if let tokenData = tokenData {
+                return hexFromData(tokenData)
+            }
+            return nil
+        }
+        set {
+            if let token = newValue {
+                let normal = filterHex(token)
+                if normal.count >= 64 {
+                    let index: String.Index = normal.index(normal.startIndex, offsetBy: 64)
+                    let trunk = normal[..<index]
+                    tokenData = dataFromHex(String(trunk))
+                }
+            } else {
+                tokenData = nil
+            }
+        }
+    }
 
     /// Data representation of the device token.
     var tokenData: Data?
