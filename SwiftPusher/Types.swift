@@ -44,6 +44,10 @@ enum CertType {
     case unknown
 }
 
+enum Constants {
+    static let ErrorReasonCodeKey = "ErrorReasonCodeKey"
+}
+
 /// List all error codes.
 enum Error: Int {
     /// No error that's odd.
