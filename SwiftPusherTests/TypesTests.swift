@@ -84,4 +84,38 @@ class TypesTests: XCTestCase {
         XCTAssertEqual(error.localizedDescription, "APN invalid payload size -7")
     }
 
+    func testNoWithReasonAndError() {
+        var error: Error? = nil
+        let result = PusherError.no(withCode: .apnInvalidPayloadSize,
+                                    reason: -7,
+                                    error: &error)
+        XCTAssertFalse(result)
+        XCTAssertNotNil(error)
+    }
+
+    func testNoWithError() {
+        var error: Error? = nil
+        let result = PusherError.no(withCode: .apnInvalidPayloadSize,
+                                    error: &error)
+        XCTAssertFalse(result)
+        XCTAssertNotNil(error)
+    }
+
+    func testNilErrorWithReason() {
+        var error: Error? = nil
+        let result = PusherError.nilError(withCode: .apnInvalidPayloadSize,
+                                          reason: -7,
+                                          error: &error)
+        XCTAssertNil(result)
+        XCTAssertNotNil(error)
+    }
+
+    func testNilError() {
+        var error: Error? = nil
+        let result = PusherError.nilError(withCode: .apnInvalidPayloadSize,
+                                          error: &error)
+        XCTAssertNil(result)
+        XCTAssertNotNil(error)
+    }
+
 }

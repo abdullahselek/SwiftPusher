@@ -333,6 +333,30 @@ public enum PusherError: Int, PusherErrorDescription {
         info[Constants.ErrorReasonCodeKey] = String(reason)
         return NSError(domain: "", code: code.rawValue, userInfo: info) as Error
     }
+
+    public static func no(withCode code: PusherError,
+                          reason: Int,
+                          error: inout Error?) -> Bool {
+        assert(code != .none, "code != .none")
+        error = PusherError.error(withCode: code, reason: reason)
+        return false
+    }
+
+    public static func no(withCode code: PusherError, error: inout Error?) -> Bool {
+        return PusherError.no(withCode: code, reason: 0, error: &error)
+    }
+
+    public static func nilError(withCode code: PusherError,
+                                reason: Int,
+                                error: inout Error?) -> Any? {
+        assert(code != .none, "code != .none")
+        error = PusherError.error(withCode: code, reason: reason)
+        return nil
+    }
+
+    public static func nilError(withCode code: PusherError, error: inout Error?) -> Any? {
+        return PusherError.nilError(withCode: code, reason: 0, error: &error)
+    }
 }
 
 public enum Environment {
