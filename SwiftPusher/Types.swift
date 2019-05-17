@@ -9,7 +9,7 @@
 import Foundation
 
 /// The current and past data formats supported by APNs. For more information see Apple documentation under 'Legacy Information'.
-enum NotificationType {
+public enum NotificationType {
     /// The 'Simple Notification Format'. The oldest format simply concatenates the device token and payload.
     case simple
     /// The 'Enhanced Notification Format'. Similar to the previous format but includes and identifier and expiration date.
@@ -19,7 +19,7 @@ enum NotificationType {
 }
 
 /// Types of push certificates.
-enum CertType {
+public enum CertType {
     /// None.
     case none
     /// iOS Development.
@@ -335,14 +335,14 @@ public enum PusherError: Int, PusherErrorDescription {
     }
 }
 
-enum Environment {
+public enum Environment {
     case none
     case sandbox
     case production
     case auto
 }
 
-enum EnvironmentOptions {
+public enum EnvironmentOptions {
     case none
     case sandbox(value: Environment)
     case production(value: Environment)
