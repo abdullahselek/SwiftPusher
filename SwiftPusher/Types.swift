@@ -53,7 +53,7 @@ protocol PusherErrorDescription  {
 }
 
 /// List all error codes.
-enum PusherError: Int, PusherErrorDescription {
+public enum PusherError: Int, PusherErrorDescription {
     /// No error that's odd.
     case none = 0
 
@@ -193,7 +193,7 @@ enum PusherError: Int, PusherErrorDescription {
     /// Keychain does not contain certificate.
     case keychainCreateIdentity = -303
 
-    var description: String {
+    public var description: String {
         switch self {
         case .none:
             return "No error, that's odd"
@@ -324,6 +324,14 @@ enum PusherError: Int, PusherErrorDescription {
         case .keychainCreateIdentity:
             return "Keychain does not contain certificate"
         }
+    }
+
+    public static func error(withCode code: PusherError, reason: Int) -> Error {
+        var description = code.description
+        description = String(format: "%@ %d", description, reason)
+        var info = [NSLocalizedDescriptionKey: description]
+        info[Constants.ErrorReasonCodeKey] = String(reason)
+        return NSError(domain: "", code: code.rawValue, userInfo: info) as Error
     }
 }
 

@@ -12,7 +12,7 @@ import XCTest
 
 class TypesTests: XCTestCase {
 
-    func testTypeDescription() {
+    func testPusherErrorDescription() {
         XCTAssertEqual(PusherError.none.description, "No error, that's odd")
         XCTAssertEqual(PusherError.apnProcessing.description, "APN processing error")
         XCTAssertEqual(PusherError.apnMissingDeviceToken.description, "APN missing device token")
@@ -77,6 +77,11 @@ class TypesTests: XCTestCase {
         XCTAssertEqual(PusherError.keychainCopyMatching.description, "Keychain cannot be searched")
         XCTAssertEqual(PusherError.keychainItemNotFound.description, "Keychain does not contain private key")
         XCTAssertEqual(PusherError.keychainCreateIdentity.description, "Keychain does not contain certificate")
+    }
+
+    func testErrorInitWithPusherError() {
+        let error = PusherError.error(withCode: .apnInvalidPayloadSize, reason: -7)
+        XCTAssertEqual(error.localizedDescription, "APN invalid payload size -7")
     }
 
 }
