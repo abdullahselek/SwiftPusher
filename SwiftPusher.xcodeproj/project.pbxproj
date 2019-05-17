@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		839DBB78228E9B32009B72D3 /* TypesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DBB77228E9B32009B72D3 /* TypesTests.swift */; };
 		A4750B0B227C9D47005738CF /* SwiftPusher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4750B01227C9D47005738CF /* SwiftPusher.framework */; };
 		A4750B12227C9D47005738CF /* SwiftPusher.h in Headers */ = {isa = PBXBuildFile; fileRef = A4750B04227C9D47005738CF /* SwiftPusher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4750B1C227C9E34005738CF /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4750B1B227C9E34005738CF /* Types.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		839DBB77228E9B32009B72D3 /* TypesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesTests.swift; sourceTree = "<group>"; };
 		A4458246227DD41300FA7D55 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A4458247227DD41300FA7D55 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		A4458248227DD41300FA7D55 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				A4BD50BD227CE00500752D38 /* PusherNotificationTests.swift */,
+				839DBB77228E9B32009B72D3 /* TypesTests.swift */,
 				A4750B11227C9D47005738CF /* Info.plist */,
 			);
 			path = SwiftPusherTests;
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4BD50BE227CE00500752D38 /* PusherNotificationTests.swift in Sources */,
+				839DBB78228E9B32009B72D3 /* TypesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

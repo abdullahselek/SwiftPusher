@@ -8,7 +8,7 @@
 
 import XCTest
 
-@testable import SwiftPusher;
+@testable import SwiftPusher
 
 class PusherNotificationTests: XCTestCase {
 
