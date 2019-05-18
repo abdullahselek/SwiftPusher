@@ -14,6 +14,7 @@
 		A4BD50B8227CD96900752D38 /* PusherNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD50B7227CD96900752D38 /* PusherNotification.swift */; };
 		A4BD50BE227CE00500752D38 /* PusherNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD50BD227CE00500752D38 /* PusherNotificationTests.swift */; };
 		A4C7E5D72280D5980006C155 /* String++.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C7E5D62280D5980006C155 /* String++.swift */; };
+		A4E02EC42290A16500A77F25 /* SSLConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E02EC32290A16500A77F25 /* SSLConnectionTests.swift */; };
 		A4F29CAC229069FA00BAAF4A /* SSLConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F29CAB229069FA00BAAF4A /* SSLConnection.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		A4BD50B7227CD96900752D38 /* PusherNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherNotification.swift; sourceTree = "<group>"; };
 		A4BD50BD227CE00500752D38 /* PusherNotificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PusherNotificationTests.swift; sourceTree = "<group>"; };
 		A4C7E5D62280D5980006C155 /* String++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String++.swift"; sourceTree = "<group>"; };
+		A4E02EC32290A16500A77F25 /* SSLConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLConnectionTests.swift; sourceTree = "<group>"; };
 		A4F29CAB229069FA00BAAF4A /* SSLConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 				A4BD50BD227CE00500752D38 /* PusherNotificationTests.swift */,
 				839DBB77228E9B32009B72D3 /* TypesTests.swift */,
 				A4750B11227C9D47005738CF /* Info.plist */,
+				A4E02EC32290A16500A77F25 /* SSLConnectionTests.swift */,
 			);
 			path = SwiftPusherTests;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E02EC42290A16500A77F25 /* SSLConnectionTests.swift in Sources */,
 				A4BD50BE227CE00500752D38 /* PusherNotificationTests.swift in Sources */,
 				839DBB78228E9B32009B72D3 /* TypesTests.swift in Sources */,
 			);
