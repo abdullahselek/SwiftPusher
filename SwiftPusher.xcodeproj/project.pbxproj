@@ -14,6 +14,7 @@
 		A4BD50B8227CD96900752D38 /* PusherNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD50B7227CD96900752D38 /* PusherNotification.swift */; };
 		A4BD50BE227CE00500752D38 /* PusherNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD50BD227CE00500752D38 /* PusherNotificationTests.swift */; };
 		A4C7E5D72280D5980006C155 /* String++.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C7E5D62280D5980006C155 /* String++.swift */; };
+		A4F29CAC229069FA00BAAF4A /* SSLConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F29CAB229069FA00BAAF4A /* SSLConnection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		A4BD50B7227CD96900752D38 /* PusherNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherNotification.swift; sourceTree = "<group>"; };
 		A4BD50BD227CE00500752D38 /* PusherNotificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PusherNotificationTests.swift; sourceTree = "<group>"; };
 		A4C7E5D62280D5980006C155 /* String++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String++.swift"; sourceTree = "<group>"; };
+		A4F29CAB229069FA00BAAF4A /* SSLConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				A4750B1B227C9E34005738CF /* Types.swift */,
 				A4BD50B7227CD96900752D38 /* PusherNotification.swift */,
 				A4C7E5D62280D5980006C155 /* String++.swift */,
+				A4F29CAB229069FA00BAAF4A /* SSLConnection.swift */,
 			);
 			path = SwiftPusher;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F29CAC229069FA00BAAF4A /* SSLConnection.swift in Sources */,
 				A4C7E5D72280D5980006C155 /* String++.swift in Sources */,
 				A4BD50B8227CD96900752D38 /* PusherNotification.swift in Sources */,
 				A4750B1C227C9E34005738CF /* Types.swift in Sources */,
