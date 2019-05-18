@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A4750B00227C9D47005738CF"
-               BuildableName = "SwiftPusher.framework"
-               BlueprintName = "SwiftPusher"
+               BuildableName = "SwiftPusher_iOS.framework"
+               BlueprintName = "SwiftPusher-iOS"
                ReferencedContainer = "container:SwiftPusher.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,8 +34,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A4750B09227C9D47005738CF"
-               BuildableName = "SwiftPusherTests.xctest"
-               BlueprintName = "SwiftPusherTests"
+               BuildableName = "SwiftPusher-iOSTests.xctest"
+               BlueprintName = "SwiftPusher-iOSTests"
                ReferencedContainer = "container:SwiftPusher.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -44,8 +44,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4750B00227C9D47005738CF"
-            BuildableName = "SwiftPusher.framework"
-            BlueprintName = "SwiftPusher"
+            BuildableName = "SwiftPusher_iOS.framework"
+            BlueprintName = "SwiftPusher-iOS"
             ReferencedContainer = "container:SwiftPusher.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,8 +66,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4750B00227C9D47005738CF"
-            BuildableName = "SwiftPusher.framework"
-            BlueprintName = "SwiftPusher"
+            BuildableName = "SwiftPusher_iOS.framework"
+            BlueprintName = "SwiftPusher-iOS"
             ReferencedContainer = "container:SwiftPusher.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -84,8 +84,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4750B00227C9D47005738CF"
-            BuildableName = "SwiftPusher.framework"
-            BlueprintName = "SwiftPusher"
+            BuildableName = "SwiftPusher_iOS.framework"
+            BlueprintName = "SwiftPusher-iOS"
             ReferencedContainer = "container:SwiftPusher.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

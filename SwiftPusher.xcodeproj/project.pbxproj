@@ -15,6 +15,14 @@
 		A4BD50BE227CE00500752D38 /* PusherNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD50BD227CE00500752D38 /* PusherNotificationTests.swift */; };
 		A4C7E5D72280D5980006C155 /* String++.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C7E5D62280D5980006C155 /* String++.swift */; };
 		A4E02EC42290A16500A77F25 /* SSLConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E02EC32290A16500A77F25 /* SSLConnectionTests.swift */; };
+		A4E02ED32290A31F00A77F25 /* SwiftPusher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E02ECA2290A31F00A77F25 /* SwiftPusher.framework */; };
+		A4E02EE12290A4D200A77F25 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4750B1B227C9E34005738CF /* Types.swift */; };
+		A4E02EE22290A4D200A77F25 /* PusherNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD50B7227CD96900752D38 /* PusherNotification.swift */; };
+		A4E02EE32290A4D200A77F25 /* String++.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C7E5D62280D5980006C155 /* String++.swift */; };
+		A4E02EE42290A4D200A77F25 /* SSLConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F29CAB229069FA00BAAF4A /* SSLConnection.swift */; };
+		A4E02EE52290A4DC00A77F25 /* PusherNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BD50BD227CE00500752D38 /* PusherNotificationTests.swift */; };
+		A4E02EE62290A4DC00A77F25 /* TypesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DBB77228E9B32009B72D3 /* TypesTests.swift */; };
+		A4E02EE72290A4DC00A77F25 /* SSLConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E02EC32290A16500A77F25 /* SSLConnectionTests.swift */; };
 		A4F29CAC229069FA00BAAF4A /* SSLConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F29CAB229069FA00BAAF4A /* SSLConnection.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +33,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = A4750B00227C9D47005738CF;
 			remoteInfo = SwiftPusher;
+		};
+		A4E02ED42290A31F00A77F25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4750AF8227C9D47005738CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4E02EC92290A31F00A77F25;
+			remoteInfo = "SwiftPusher-macOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -37,14 +52,17 @@
 		A445824A227DD41300FA7D55 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A4750B01227C9D47005738CF /* SwiftPusher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPusher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4750B04227C9D47005738CF /* SwiftPusher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftPusher.h; sourceTree = "<group>"; };
-		A4750B05227C9D47005738CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4750B0A227C9D47005738CF /* SwiftPusherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPusherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4750B05227C9D47005738CF /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		A4750B0A227C9D47005738CF /* SwiftPusher-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftPusher-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4750B11227C9D47005738CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4750B1B227C9E34005738CF /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		A4BD50B7227CD96900752D38 /* PusherNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherNotification.swift; sourceTree = "<group>"; };
 		A4BD50BD227CE00500752D38 /* PusherNotificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PusherNotificationTests.swift; sourceTree = "<group>"; };
 		A4C7E5D62280D5980006C155 /* String++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String++.swift"; sourceTree = "<group>"; };
 		A4E02EC32290A16500A77F25 /* SSLConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLConnectionTests.swift; sourceTree = "<group>"; };
+		A4E02ECA2290A31F00A77F25 /* SwiftPusher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPusher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E02ECD2290A31F00A77F25 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		A4E02ED22290A31F00A77F25 /* SwiftPusher-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftPusher-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F29CAB229069FA00BAAF4A /* SSLConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +79,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4750B0B227C9D47005738CF /* SwiftPusher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E02EC72290A31F00A77F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E02ECF2290A31F00A77F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E02ED32290A31F00A77F25 /* SwiftPusher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				A4750B01227C9D47005738CF /* SwiftPusher.framework */,
-				A4750B0A227C9D47005738CF /* SwiftPusherTests.xctest */,
+				A4750B0A227C9D47005738CF /* SwiftPusher-iOSTests.xctest */,
+				A4E02ECA2290A31F00A77F25 /* SwiftPusher.framework */,
+				A4E02ED22290A31F00A77F25 /* SwiftPusher-macOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,7 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				A4750B04227C9D47005738CF /* SwiftPusher.h */,
-				A4750B05227C9D47005738CF /* Info.plist */,
+				A4750B05227C9D47005738CF /* Info-iOS.plist */,
+				A4E02ECD2290A31F00A77F25 /* Info-macOS.plist */,
 				A4750B1B227C9E34005738CF /* Types.swift */,
 				A4BD50B7227CD96900752D38 /* PusherNotification.swift */,
 				A4C7E5D62280D5980006C155 /* String++.swift */,
@@ -125,12 +161,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4E02EC52290A31F00A77F25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A4750B00227C9D47005738CF /* SwiftPusher */ = {
+		A4750B00227C9D47005738CF /* SwiftPusher-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4750B15227C9D47005738CF /* Build configuration list for PBXNativeTarget "SwiftPusher" */;
+			buildConfigurationList = A4750B15227C9D47005738CF /* Build configuration list for PBXNativeTarget "SwiftPusher-iOS" */;
 			buildPhases = (
 				A4750AFC227C9D47005738CF /* Headers */,
 				A4750AFD227C9D47005738CF /* Sources */,
@@ -141,14 +184,14 @@
 			);
 			dependencies = (
 			);
-			name = SwiftPusher;
+			name = "SwiftPusher-iOS";
 			productName = SwiftPusher;
 			productReference = A4750B01227C9D47005738CF /* SwiftPusher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A4750B09227C9D47005738CF /* SwiftPusherTests */ = {
+		A4750B09227C9D47005738CF /* SwiftPusher-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4750B18227C9D47005738CF /* Build configuration list for PBXNativeTarget "SwiftPusherTests" */;
+			buildConfigurationList = A4750B18227C9D47005738CF /* Build configuration list for PBXNativeTarget "SwiftPusher-iOSTests" */;
 			buildPhases = (
 				A4750B06227C9D47005738CF /* Sources */,
 				A4750B07227C9D47005738CF /* Frameworks */,
@@ -159,9 +202,45 @@
 			dependencies = (
 				A4750B0D227C9D47005738CF /* PBXTargetDependency */,
 			);
-			name = SwiftPusherTests;
+			name = "SwiftPusher-iOSTests";
 			productName = SwiftPusherTests;
-			productReference = A4750B0A227C9D47005738CF /* SwiftPusherTests.xctest */;
+			productReference = A4750B0A227C9D47005738CF /* SwiftPusher-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A4E02EC92290A31F00A77F25 /* SwiftPusher-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4E02EDB2290A31F00A77F25 /* Build configuration list for PBXNativeTarget "SwiftPusher-macOS" */;
+			buildPhases = (
+				A4E02EC52290A31F00A77F25 /* Headers */,
+				A4E02EC62290A31F00A77F25 /* Sources */,
+				A4E02EC72290A31F00A77F25 /* Frameworks */,
+				A4E02EC82290A31F00A77F25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftPusher-macOS";
+			productName = "SwiftPusher-macOS";
+			productReference = A4E02ECA2290A31F00A77F25 /* SwiftPusher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A4E02ED12290A31F00A77F25 /* SwiftPusher-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4E02EDE2290A31F00A77F25 /* Build configuration list for PBXNativeTarget "SwiftPusher-macOSTests" */;
+			buildPhases = (
+				A4E02ECE2290A31F00A77F25 /* Sources */,
+				A4E02ECF2290A31F00A77F25 /* Frameworks */,
+				A4E02ED02290A31F00A77F25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4E02ED52290A31F00A77F25 /* PBXTargetDependency */,
+			);
+			name = "SwiftPusher-macOSTests";
+			productName = "SwiftPusher-macOSTests";
+			productReference = A4E02ED22290A31F00A77F25 /* SwiftPusher-macOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -181,6 +260,12 @@
 					A4750B09227C9D47005738CF = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
+					A4E02EC92290A31F00A77F25 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					A4E02ED12290A31F00A77F25 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 				};
 			};
 			buildConfigurationList = A4750AFB227C9D47005738CF /* Build configuration list for PBXProject "SwiftPusher" */;
@@ -195,8 +280,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A4750B00227C9D47005738CF /* SwiftPusher */,
-				A4750B09227C9D47005738CF /* SwiftPusherTests */,
+				A4750B00227C9D47005738CF /* SwiftPusher-iOS */,
+				A4750B09227C9D47005738CF /* SwiftPusher-iOSTests */,
+				A4E02EC92290A31F00A77F25 /* SwiftPusher-macOS */,
+				A4E02ED12290A31F00A77F25 /* SwiftPusher-macOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -210,6 +297,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A4750B08227C9D47005738CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E02EC82290A31F00A77F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E02ED02290A31F00A77F25 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -240,13 +341,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4E02EC62290A31F00A77F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E02EE12290A4D200A77F25 /* Types.swift in Sources */,
+				A4E02EE22290A4D200A77F25 /* PusherNotification.swift in Sources */,
+				A4E02EE32290A4D200A77F25 /* String++.swift in Sources */,
+				A4E02EE42290A4D200A77F25 /* SSLConnection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E02ECE2290A31F00A77F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E02EE52290A4DC00A77F25 /* PusherNotificationTests.swift in Sources */,
+				A4E02EE62290A4DC00A77F25 /* TypesTests.swift in Sources */,
+				A4E02EE72290A4DC00A77F25 /* SSLConnectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		A4750B0D227C9D47005738CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A4750B00227C9D47005738CF /* SwiftPusher */;
+			target = A4750B00227C9D47005738CF /* SwiftPusher-iOS */;
 			targetProxy = A4750B0C227C9D47005738CF /* PBXContainerItemProxy */;
+		};
+		A4E02ED52290A31F00A77F25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4E02EC92290A31F00A77F25 /* SwiftPusher-macOS */;
+			targetProxy = A4E02ED42290A31F00A77F25 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -383,7 +510,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftPusher/Info.plist;
+				INFOPLIST_FILE = "SwiftPusher/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -392,7 +519,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abdullahselek.SwiftPusher;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftPusher;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -410,7 +537,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftPusher/Info.plist;
+				INFOPLIST_FILE = "SwiftPusher/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -419,7 +546,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.abdullahselek.SwiftPusher;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwiftPusher;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,6 +589,102 @@
 			};
 			name = Release;
 		};
+		A4E02EDC2290A31F00A77F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "SwiftPusher/Info-macOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.SwiftPusher-macOS";
+				PRODUCT_NAME = SwiftPusher;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A4E02EDD2290A31F00A77F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "SwiftPusher/Info-macOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.SwiftPusher-macOS";
+				PRODUCT_NAME = SwiftPusher;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A4E02EDF2290A31F00A77F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftPusherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.SwiftPusher-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A4E02EE02290A31F00A77F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftPusherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.SwiftPusher-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -474,7 +697,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4750B15227C9D47005738CF /* Build configuration list for PBXNativeTarget "SwiftPusher" */ = {
+		A4750B15227C9D47005738CF /* Build configuration list for PBXNativeTarget "SwiftPusher-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4750B16227C9D47005738CF /* Debug */,
@@ -483,11 +706,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4750B18227C9D47005738CF /* Build configuration list for PBXNativeTarget "SwiftPusherTests" */ = {
+		A4750B18227C9D47005738CF /* Build configuration list for PBXNativeTarget "SwiftPusher-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4750B19227C9D47005738CF /* Debug */,
 				A4750B1A227C9D47005738CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4E02EDB2290A31F00A77F25 /* Build configuration list for PBXNativeTarget "SwiftPusher-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4E02EDC2290A31F00A77F25 /* Debug */,
+				A4E02EDD2290A31F00A77F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4E02EDE2290A31F00A77F25 /* Build configuration list for PBXNativeTarget "SwiftPusher-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4E02EDF2290A31F00A77F25 /* Debug */,
+				A4E02EE02290A31F00A77F25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
