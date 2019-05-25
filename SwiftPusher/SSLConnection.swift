@@ -7,6 +7,18 @@
 //
 
 import Foundation
+import CoreFoundation
+
+internal class TCPClientCallBack {
+
+    init(socket: CFSocket?,
+         type: CFSocketCallBackType,
+         address: CFData?,
+         data: UnsafeRawPointer?,
+         info: UnsafeMutableRawPointer?) {
+
+    }
+}
 
 open class SSLConnection {
 
@@ -28,4 +40,26 @@ open class SSLConnection {
         self.socket = -1
     }
 
+    func acceptConnection(socket: CFSocket?,
+                          type: CFSocketCallBackType,
+                          address: CFData?,
+                          data: UnsafeRawPointer?,
+                          info: UnsafeMutableRawPointer?) {
+        // Accept connection and stuff later
+    }
+
+    open func connectSocket(withError error: inout Error?) -> Bool {
+        let socket = CFSocketCreate(kCFAllocatorDefault,
+                                    AF_INET,
+                                    SOCK_STREAM,
+                                    0,
+                                    CFSocketCallBackType.readCallBack.rawValue,
+                                    { socket, callBackType, address, data, info in
+                                        TCPClientCallBack(socket: socket, type: callBackType, address: address, data: data, info: info)
+        }, nil)
+        if socket == nil {
+            return PusherError.no(withCode: .socketCreate, error: &error)
+        }
+        return true
+    }
 }
