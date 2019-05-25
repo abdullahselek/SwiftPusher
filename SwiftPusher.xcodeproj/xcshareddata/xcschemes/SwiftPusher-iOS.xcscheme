@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A4750B00227C9D47005738CF"
-               BuildableName = "SwiftPusher_iOS.framework"
+               BuildableName = "SwiftPusher.framework"
                BlueprintName = "SwiftPusher-iOS"
                ReferencedContainer = "container:SwiftPusher.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4750B00227C9D47005738CF"
-            BuildableName = "SwiftPusher_iOS.framework"
+            BuildableName = "SwiftPusher.framework"
             BlueprintName = "SwiftPusher-iOS"
             ReferencedContainer = "container:SwiftPusher.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4750B00227C9D47005738CF"
-            BuildableName = "SwiftPusher_iOS.framework"
+            BuildableName = "SwiftPusher.framework"
             BlueprintName = "SwiftPusher-iOS"
             ReferencedContainer = "container:SwiftPusher.xcodeproj">
          </BuildableReference>
@@ -84,7 +84,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A4750B00227C9D47005738CF"
-            BuildableName = "SwiftPusher_iOS.framework"
+            BuildableName = "SwiftPusher.framework"
             BlueprintName = "SwiftPusher-iOS"
             ReferencedContainer = "container:SwiftPusher.xcodeproj">
          </BuildableReference>
