@@ -55,11 +55,23 @@ open class SSLConnection {
                                     0,
                                     CFSocketCallBackType.readCallBack.rawValue,
                                     { socket, callBackType, address, data, info in
-                                        TCPClientCallBack(socket: socket, type: callBackType, address: address, data: data, info: info)
+                                        guard let socket = socket,
+                                            let address = address,
+                                            let data = data,
+                                            let info = info else {
+                                            return
+                                        }
+                                        let mySelf = Unmanaged<SSLConnection>.fromOpaque(UnsafeRawPointer(info)).takeUnretainedValue()
+                                        mySelf.acceptConnection(socket: socket, type: callBackType, address: address, data: data, info: info)
         }, nil)
         if socket == nil {
             return PusherError.no(withCode: .socketCreate, error: &error)
         }
+
+        var address = sockaddr_in()
+        memset(&address, 0, MemoryLayout<sockaddr_in>.size)
+        var hostinfo: UnsafeMutablePointer<hostent>
+
         return true
     }
 }
