@@ -70,7 +70,15 @@ open class SSLConnection {
 
         var address = sockaddr_in()
         memset(&address, 0, MemoryLayout<sockaddr_in>.size)
-        var hostinfo: UnsafeMutablePointer<hostent>
+        let entr = gethostname(UnsafeMutablePointer<Int8>(mutating: (host as NSString).utf8String), MemoryLayout.size(ofValue: host))
+        if entr == 0 {
+            return PusherError.no(withCode: .socketResolveHostName, error: &error)
+        }
+        var host: in_addr!
+        memcpy(&host, UnsafeRawPointer(bitPattern: Int(entr)), MemoryLayout.size(ofValue: host))
+        address.sin_addr = host
+        address.sin_port = CFSwapInt16(UInt16(port))
+        address.sin_family = sa_family_t(AF_INET)
 
         return true
     }
