@@ -9,17 +9,6 @@
 import Foundation
 import CoreFoundation
 
-internal class TCPClientCallBack {
-
-    init(socket: CFSocket?,
-         type: CFSocketCallBackType,
-         address: CFData?,
-         data: UnsafeRawPointer?,
-         info: UnsafeMutableRawPointer?) {
-
-    }
-}
-
 open class SSLConnection {
 
     /// The host name, which will be resolved using DNS.
