@@ -14,7 +14,6 @@ env:
   - POD_LINT="NO"
   matrix:
     - DESTINATION="OS=12.2,name=iPhone XS" SCHEME="$IOS_FRAMEWORK_SCHEME"      SDK="$IOS_SDK"      RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=11.4,name=iPhone X"  SCHEME="$IOS_FRAMEWORK_SCHEME"      SDK="$IOS_SDK"      RUN_TESTS="YES" POD_LINT="NO"
     - DESTINATION="arch=x86_64"            SCHEME="$MACOS_FRAMEWORK_SCHEME"    SDK="$MACOS_SDK"    RUN_TESTS="YES" POD_LINT="NO"
 
 before_install:
