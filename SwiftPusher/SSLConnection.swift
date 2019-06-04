@@ -30,9 +30,20 @@ open class SSLConnection {
     }
 
     func start() {
+        let options = NWProtocolTLS.Options()
+        let securityOptions = options.securityProtocolOptions
+        let params = NWParameters(tls: options)
         let connection = NWConnection(host: NWEndpoint.Host(host),
                                       port: NWEndpoint.Port(integerLiteral: NWEndpoint.Port.IntegerLiteralType(port)),
-                                      using: .tls)
+                                      using: params)
+        sec_protocol_options_set_verify_block(securityOptions, { _, trust, completionHandler in
+            // let isTrusted = ...
+            completionHandler(sec_identity_create(self.identity) != nil)
+        }, .main)
+        sec_protocol_options_set_local_identity(
+            securityOptions,
+            sec_identity_create(identity)!
+        )
         connection.stateUpdateHandler = stateDidChange(to:)
         self.setupReceive(on: connection)
         connection.start(queue: .main)
